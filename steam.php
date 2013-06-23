@@ -19,14 +19,14 @@ if(isset($_GET['s']))
 	$valid2 = $matches[2];
 	$realokay = ($valid2*2) + 76561197960265728 + $valid1; //Формула расчета steamID64 из STEAM_0:X:XXXXXXXX
 
-        $urljson = file_get_contents("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=BC29D18B925718D6A8A17BCB9B925517&steamids=$realokay");
+        $urljson = file_get_contents("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=BC29D18B9XXXXXXXXXXXXBCB9B925517&steamids=$realokay");
         $data = (array) json_decode($urljson)->response->players[0];
         $profileurl = $data['profileurl'];							//Находим profileurl (customurl)
     }
 
     if (preg_match($steamid2, $okay)) 
     {
-        $urljson = file_get_contents("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=BC29D18B925718D6A8A17BCB9B925517&steamids=$okay");
+        $urljson = file_get_contents("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=BC29D18B9XXXXXXXXXXXXBCB9B925517&steamids=$okay");
         $data = (array) json_decode($urljson)->response->players[0];
         $profileurl = $data['profileurl'];							//Находим profileurl (customurl)
     }
@@ -72,7 +72,7 @@ if(isset($_GET['s']))
             }
             else {$myurl = $matchespro[3];}
 
-            $urljson = file_get_contents("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=BC29D18B925718D6A8A17BCB9B925517&steamids=$myurl");
+            $urljson = file_get_contents("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=BC29D18B9XXXXXXXXXXXXBCB9B925517&steamids=$myurl");
             $data = (array) json_decode($urljson)->response->players[0];
             $profileurl = $data['profileurl'];							//Проверяем, есть ли customurl
 
