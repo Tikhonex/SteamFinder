@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
   <head>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="//yandex.st/jquery/form/3.14/jquery.form.min.js"></script>
+    <script src="//yandex.st/bootstrap/2.3.2/js/bootstrap.min.js"></script>
     <title>SteamIDFinder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
