@@ -225,7 +225,9 @@ echo '<div class="profile">
 </div>						
 </div>
 <div class="clear_both"></div>					
-</div>';
+</div>
+
+<!-- Created Tikhonex (tikhonex.ru) -->';
 }
 
 if ((empty($url->steamID64)) AND (!empty($okay)) AND ((preg_match($steamid1, $okay)) OR  (preg_match($steamid2, $okay)) OR (preg_match($steamid3, $okay)) OR (preg_match($steamid4, $okay)) OR (preg_match($steamid5, $okay))) )
