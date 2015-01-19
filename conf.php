@@ -1,9 +1,17 @@
-﻿<?php 
-$server="";
-$user="";
-$pass="";
-$db="";
-$connect = @mysql_connect($server, $user, $pass) or die('<center><h1>Нет соединения с базой MySQL! :(</h1></center>');
-mysql_select_db($db);
-mysql_query("SET CHARSET utf8");
+﻿<?php
+  $mysqli = new mysqli("{HOST}", "{USER}", "{PASSWORD}", "{DATABASE}");
+  if ($mysqli->connect_errno) {
+    echo '
+    <div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">DB Error</h3>
+			</div>
+			<div class="panel-body">
+				Error connecting to database :(
+			</div>
+		</div>';
+  }
+  $apikey = "{APIKEY}"; //http://steamcommunity.com/dev/apikey
+  $debugOn = false;
+  $cacheTime = 15000;
 ?>
