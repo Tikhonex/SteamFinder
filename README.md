@@ -1,7 +1,7 @@
 SteamFinder
 ===========
 
-Find Steam player info and VAC status.
+![alt text](https://raw.githubusercontent.com/Tikhonex/SteamFinder/master/screenshot.png "Screenshot of the main page")
 
 Installation
 =============
